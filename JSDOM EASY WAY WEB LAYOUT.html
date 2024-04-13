@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Web layout  Easy way</title>
+</head>
+<body>
+    <script>
+        var a = document.createElement('header');
+        a.innerHTML='Header'
+        console.log(a);
+        a.setAttribute('class','s_header');
+        document.body.appendChild(a);
+        document.body.style.margin = '0px'
+        var a = document.getElementsByClassName('s_header');
+        a[0].style.height = '125px';
+        a[0].style.width = '100%';
+        a[0].style.backgroundColor = 'pink';
+        a[0].style.lineHeight = '125px';
+        a[0].style.fontSize = '3rem';
+        a[0].style.textAlign = 'center'
+        a[0].style.border = '1.5px solid black'
+        a[0].style.color = 'green';
+
+
+        var b = document.createElement('nav');
+        console.log(b);
+        b.innerHTML= 'Nav';
+        document.body.appendChild(b);
+        b.setAttribute('class','s_nav');
+        var b = document.getElementsByClassName('s_nav');
+        b[0].style.height = '75px';
+        b[0].style.width = '100%';
+        b[0].style.lineHeight = '75px';
+        b[0].style.backgroundColor = 'pink';
+        b[0].style.border = '1.5px solid black';
+        b[0].style.backgroundColor = 'pink';
+        b[0].style.textAlign = 'center';
+        b[0].style.fontSize = '3rem';
+        b[0].style.color = 'green';
+
+        var c = document.createElement('section');c.setAttribute('class', 's_section');
+        console.log(c);
+        document.body.appendChild(c);
+        c.innerHTML='MainArea';
+        var c = document.getElementsByClassName('s_section');
+        c[0].style.height = '400px';
+        c[0].style.width = '100%';
+        c[0].style.lineHeight = '400px';
+        c[0].style.backgroundColor = 'pink';
+        c[0].style.textAlign = 'center';
+        c[0].style.fontSize = '3rem';
+        c[0].style.color = 'green';
+        c[0].style.border = '1.5px solid black';
+
+        var d = document.createElement('footer');
+        d.setAttribute('class','s_footer');
+        console.log(d);
+        d.innerHTML='footer';
+        document.body.appendChild(d);
+        var d = document.getElementsByClassName('s_footer');
+        d[0].style.height = '200px'
+        d[0].style.width = '100%'
+        d[0].style.lineHeight = '200px'
+        d[0].style.backgroundColor = 'pink'
+        d[0].style.textAlign = 'center'
+        d[0].style.fontSize = '3rem'
+        d[0].style.border = '1.5px solid black'
+        d[0].style.color = 'green'
+
+    </script>
+</body>
+</html>
